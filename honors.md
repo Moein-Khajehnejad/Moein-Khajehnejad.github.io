@@ -7,7 +7,8 @@ title: Honors
 - <b>2017:</b> Nominated for <b>Best B.Sc. Thesis</b> among all graduating students, Sharif University of Technology.
 
 - <b>2016:</b> Awarded fully funded summer internship grant from <a href="http://www.sutd.edu.sg/About-Us/Collaborations/MIT">SUTD-MIT</a>, Singapore.
-Awarded fully funded internship grant from <a href="https://www.epfl.ch/">EPFL</a>, Switzerland.
+
+- <b>2016:</b> Awarded fully funded internship grant from <a href="https://www.epfl.ch/">EPFL</a>, Switzerland.
 
 - <b>2016:</b> Elected for scholarship to attend <a href= "http://www.nus.edu.sg/">NUS Workshop</a> on Contemporary Research in Computer Science and Information Systems, Singapore.
 
