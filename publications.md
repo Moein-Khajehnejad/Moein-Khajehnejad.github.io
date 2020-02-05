@@ -5,13 +5,16 @@ title: Publications
 ### 2019
 ---
 
+
+<a href="https://arxiv.org/pdf/1905.09239.pdf">Optimal Decision Making Under Strategic Behavior </a> <br />
+B. Tabibian∗, S. Tsirtsis∗, M. Khajehnejad∗, A. Singla, B. Scholkopf, M. Gomez- Rodriguez
+<br />
+<em>ArXiv 1905.09239</em>
+
 <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221172">SimNet: Similarity-based network embeddings with mean commute time </a> <br />
 M. Khajehnejad<br />
 <em>PLoS ONE</em>
 
-<a href="https://arxiv.org/abs/1905.09239/">Optimal Decision Making Under Strategic Behavior </a> <br />
-M. Khajehnejad, B. Tabibian, B. Schoelkopf, A. Singla, M. Gomez-Rodriguez<br />
-<em>ArXiv 1905.09239</em>
 
 <a href="https://www.sciencedirect.com/science/article/pii/S096007791930075X">Efficiency of long-range navigation on Treelike fractals </a> <br />
 M. Khajehnejad<br />
