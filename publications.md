@@ -7,7 +7,7 @@ title: Publications
 
 
 <a href="https://arxiv.org/pdf/1905.09239.pdf">Optimal Decision Making Under Strategic Behavior </a> <br />
-B. Tabibian∗, S. Tsirtsis∗, M. Khajehnejad∗, A. Singla, B. Scholkopf, M. Gomez- Rodriguez
+B. Tabibian^{∗}, S. Tsirtsis∗, M. Khajehnejad∗, A. Singla, B. Scholkopf, M. Gomez- Rodriguez
 <br />
 <em>ArXiv 1905.09239</em>
 
