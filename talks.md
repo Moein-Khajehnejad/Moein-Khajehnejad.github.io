@@ -2,7 +2,8 @@
 layout: page
 title: Talks
 ---
-- <b>2019:</b> Optimal Decision Making Under Strategic Behavior at <b>Human-Centric Machine Learning (HCML) Workshop, NeurIPS, Vancouver, Canada, 2019</b>. 
+- <b>2019:</b> Optimal Decision Making Under Strategic Behavior at <b>Human-Centric Machine Learning (HCML) Workshop, NeurIPS, Vancouver, Canada, 2019 salam</b>. 
+
 
  
 
