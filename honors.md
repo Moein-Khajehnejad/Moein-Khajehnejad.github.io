@@ -2,7 +2,7 @@
 layout: page
 title: Honors
 ---
-- <b>2019:</b> Elected for a travel grant by <b>HCML</b> organizers to attend <b>NeurIPS 2019</b>, Vancouver, Canada.. 
+- <b>2019:</b> Elected for a travel grant by <b>HCML</b> organizers to attend <b>NeurIPS 2019</b>, Vancouver, Canada. 
 
 - <b>2019:</b> Invited for a fully-funded fellowship as a visiting scholar at the <a href="https://machineteaching.mpi-sws.org/index.html"> Max Planck Institute for Software Systems</a>, Saarbrücken, Germany. 
 
