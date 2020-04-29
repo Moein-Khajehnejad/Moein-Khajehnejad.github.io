@@ -8,7 +8,7 @@ title: Publications
 
 <a>Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks </a> 
  <br />
- M. Khajehnejad<sup>∗</sup>, A.A. Rezaei<sup>∗</sup> , M. Babaei, J. Hoffmann, M. Jalili, A. Weller
+ M. Khajehnejad<sup>∗</sup>, A.A. Rezaei<sup>∗</sup>, M. Babaei, J. Hoffmann, M. Jalili, A. Weller
 <br />
 <em>In Proc. of the 29th International Joint Conference on Artificial Intelligence (IJCAI'20), 2020</em>
 
