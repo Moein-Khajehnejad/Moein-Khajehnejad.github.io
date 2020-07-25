@@ -2,6 +2,10 @@
 layout: page
 title: Honors
 ---
+- <b>2020:</b> Elected to attend Machine Learning Summer School (<b>MLSS 2020</b>) with acceptance rate of 13.8%, Tübingen, Germany. [<a href="https://www.youtube.com/watch?v=dYSjbhN6zss&t=12s">Link to my presentation.</a>] 
+
+- <b>2020:</b>  Elected to attend and receive living allowance for the <b>School on Collective Animal Behaviour</b>; Organized by the international center of theoretical physics (ICTP), Havana, Cuba. 
+
 - <b>2019:</b> Elected for a travel grant by <b>HCML</b> organizers to attend <b>NeurIPS 2019</b>, Vancouver, Canada. 
 
 - <b>2019:</b> Invited for a fully-funded fellowship as a visiting scholar at the <a href="https://machineteaching.mpi-sws.org/index.html"> Max Planck Institute for Software Systems</a>, Saarbrücken, Germany. 
