@@ -2,7 +2,12 @@
 layout: page
 title: Talks
 ---
+<b>2020:</b> Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks at <b>Machine Learning Summer School (MLSS) 2020</b>. [<a href="https://www.youtube.com/watch?v=dYSjbhN6zss&t=12s">Link to my presentation.</a>]  
+
+
 - <b>2019:</b> Optimal Decision Making Under Strategic Behavior at <b>Human-Centric Machine Learning (HCML) Workshop, NeurIPS, Vancouver, Canada, 2019</b>. 
+
+
 
 
  
