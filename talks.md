@@ -2,6 +2,10 @@
 layout: page
 title: Talks
 ---
+- <b>2022:</b> Hunting for Dual-target Set on a Class of Hierarchical Networks at <b>International Conference on Network Science (NetSci-X 2022)</b>. 
+
+- <b>2021:</b> CrossWalk: Fairness-enhanced Node Representation Learning at <b>ICML 2021, Workshop on Socially Responsible Machine Learning</b>.  
+
 - <b>2020:</b> Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks at <b>Machine Learning Summer School (MLSS) 2020</b>. [<a href="https://www.youtube.com/watch?v=dYSjbhN6zss&t=12s">Link to my presentation.</a>]  
 
 

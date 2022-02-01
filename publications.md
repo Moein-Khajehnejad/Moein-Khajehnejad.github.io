@@ -2,8 +2,8 @@
 layout: page
 title: Publications
 ---
-### 2022
----
+<!-- ### 2022 -->
+<!-- --- -->
 
 
 <a >Hunting for Dual-target Set on a Class of Hierarchical Networks </a> 
@@ -24,8 +24,8 @@ title: Publications
  A. Khajehnejad, M. Khajehnejad, M. Babaei, K. Gummadi, A. Weller, B. Mirzasoleiman
 <br />
 <em>In Proc. of the AAAI Conference on Artificial Intelligence 2022, (AAAI-22)</em>
-### 2020
----
+<!-- ### 2020 -->
+<!-- --- -->
 
 
 <a href="https://www.ijcai.org/Proceedings/2020/0594.pdf">Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks </a> 
@@ -35,8 +35,8 @@ title: Publications
 <em>In Proc. of the 29th International Joint Conference on Artificial Intelligence (IJCAI'20), 2020</em>
 
 
-### 2019
----
+<!-- ### 2019 -->
+<!-- --- -->
 
 
 <a href="https://arxiv.org/pdf/1905.09239.pdf">Optimal Decision Making Under Strategic Behavior </a> <br />
@@ -53,14 +53,14 @@ M. Khajehnejad<br />
 M. Khajehnejad<br />
 <em>Chaos, Solitons & Fractals - Elsevier</em>  
 
-### 2017
----
+<!-- ### 2017 -->
+<!-- --- -->
 <a href="https://www.mdpi.com/2076-3425/7/8/109/htm">Alzheimer's disease early diagnosis using manifold-based semi-supervised learning </a> <br />
 M. Khajehnejad, F. Habibollahi Saatlou, H. Mohammadzade<br />
 <em>Brain sciences</em>
 
-### 2016
----
+<!-- ### 2016 -->
+<!-- --- -->
 <a href="https://www.sciencedirect.com/science/article/pii/S096007791930075X">Navigation by anomalous random walks on complex networks </a> <br />
 T. Weng, J. Zhang, M. Khajehnejad, M. Small, R. Zheng, P. Hui<br />
 <em>Nature, Scientific reports</em> 
