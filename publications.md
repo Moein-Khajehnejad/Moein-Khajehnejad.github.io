@@ -2,6 +2,28 @@
 layout: page
 title: Publications
 ---
+### 2022
+---
+
+
+<a >Hunting for Dual-target Set on a Class of Hierarchical Networks </a> 
+ <br />
+ M. Khajehnejad, H. Habibollahi
+<br />
+<em>to appear in Proceedings of International Conference on Network Science (NetSci-X 2022)</em>
+
+
+<a >Neural Network Poisson Models for Behavioural and Neural Spike Train Data </a> 
+ <br />
+ M. Khajehnejad<sup>∗</sup>, H. Habibollahi<sup>∗</sup>, R. Nock, E. Arabzadeh, P. Dayan, A. Dezfouli
+<br />
+<em>Submitted to Proceedings of the National Academy of Sciences of the United States of America (PNAS)</em>
+
+<a href="https://arxiv.org/abs/2105.02725">CrossWalk: Fairness-enhanced Node Representation Learning </a> 
+ <br />
+ A. Khajehnejad, M. Khajehnejad, M. Babaei, K. Gummadi, A. Weller, B. Mirzasoleiman
+<br />
+<em>In Proc. of the AAAI Conference on Artificial Intelligence 2022, (AAAI-22)</em>
 ### 2020
 ---
 
