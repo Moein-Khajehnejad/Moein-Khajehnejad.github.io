@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications (<a href="https://scholar.google.com/citations?user=sNCC42QAAAAJ&hl=en&oi=ao"> <small> Google Scholar </small> </a>)
+title: Publications <a href="https://scholar.google.com/citations?user=sNCC42QAAAAJ&hl=en&oi=ao"> <small> (Google Scholar) </small> </a>
 ---
 <!-- ### 2022 -->
 <!-- --- -->
