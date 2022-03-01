@@ -6,14 +6,14 @@ title: Publications <a href="https://scholar.google.com/citations?user=sNCC42QAA
 <!-- --- -->
 
 
-<a >Hunting for Dual-target Set on a Class of Hierarchical Networks </a> 
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-97240-0_8">Hunting for Dual-target Set on a Class of Hierarchical Networks </a> 
  <br />
  M. Khajehnejad, F. Habibollahi
 <br />
-<em>to appear in Proceedings of International Conference on Network Science (NetSci-X 2022)</em>
+<em>International Conference on Network Science. Springer, Cham, 2022</em>
 
 
-<a >Neural Network Poisson Models for Behavioural and Neural Spike Train Data </a> 
+<a href="https://www.biorxiv.org/content/10.1101/2020.07.13.201673v2.full.pdf">Neural Network Poisson Models for Behavioural and Neural Spike Train Data </a> 
  <br />
  M. Khajehnejad<sup>∗</sup>, F. Habibollahi<sup>∗</sup>, R. Nock, E. Arabzadeh, P. Dayan, A. Dezfouli
 <br />
