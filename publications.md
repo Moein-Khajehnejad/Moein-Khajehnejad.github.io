@@ -5,6 +5,12 @@ title: Publications <a href="https://scholar.google.com/citations?user=sNCC42QAA
 <!-- ### 2022 -->
 <!-- --- -->
 
+<a href="https://www.biorxiv.org/content/10.1101/2020.07.13.201673v2.full.pdf">Neural Network Poisson Models for Behavioural and Neural Spike Train Data </a> 
+ <br />
+ M. Khajehnejad<sup>∗</sup>, F. Habibollahi<sup>∗</sup>, R. Nock, E. Arabzadeh, P. Dayan, A. Dezfouli
+<br />
+<em>In Proc. of the 39th International Conference on Machine Learning (ICML 2022) </em>
+
 
 <a href="https://link.springer.com/chapter/10.1007/978-3-030-97240-0_8">Hunting for Dual-target Set on a Class of Hierarchical Networks </a> 
  <br />
@@ -12,12 +18,6 @@ title: Publications <a href="https://scholar.google.com/citations?user=sNCC42QAA
 <br />
 <em>International Conference on Network Science. Springer, Cham, 2022</em>
 
-
-<a href="https://www.biorxiv.org/content/10.1101/2020.07.13.201673v2.full.pdf">Neural Network Poisson Models for Behavioural and Neural Spike Train Data </a> 
- <br />
- M. Khajehnejad<sup>∗</sup>, F. Habibollahi<sup>∗</sup>, R. Nock, E. Arabzadeh, P. Dayan, A. Dezfouli
-<br />
-<em>Submitted to Proceedings of the National Academy of Sciences of the United States of America (PNAS)</em>
 
 <a href="https://arxiv.org/abs/2105.02725">CrossWalk: Fairness-enhanced Node Representation Learning </a> 
  <br />
