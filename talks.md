@@ -4,6 +4,7 @@ title: Talks
 ---
 - <b>2022:</b> Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks at <b> Complex networks: Theory, Methods, and Applications, Como, Italy. </b>
 
+
 <!-- - <b>2022:</b> Hunting for Dual-target Set on a Class of Hierarchical Networks at <b>International Conference on Network Science (NetSci-X 2022).</b> 
  -->
 - <b>2021:</b> CrossWalk: Fairness-enhanced Node Representation Learning at <b>ICML 2021, Workshop on Socially Responsible Machine Learning.</b>  
