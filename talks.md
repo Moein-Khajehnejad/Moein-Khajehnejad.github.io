@@ -8,7 +8,7 @@ title: Talks
 
 - <b>2021:</b> CrossWalk: Fairness-enhanced Node Representation Learning at <b>ICML 2021, Workshop on Socially Responsible Machine Learning</b>.  
 
-- <b>2020:</b> Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks at <b> IJCAI 2020.</b> 
+- <b>2020:</b> Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks at <b> International Joint Conference on Artificial Intelligence(IJCAI) 2020.</b> 
 
 - <b>2020:</b> Adversarial Graph Embeddings for Fair Influence Maximization over Social Networks at <b>Machine Learning Summer School (MLSS) 2020</b>. [<a href="https://www.youtube.com/watch?v=dYSjbhN6zss&t=12s">Link to my presentation.</a>]  
 
