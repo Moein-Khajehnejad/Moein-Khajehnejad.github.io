@@ -37,6 +37,10 @@
 
 
   <link rel="stylesheet" href="./data/css">
+  
+  <!-- n8n chat widget styles -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
 
 </head>
 
@@ -542,6 +546,19 @@ src="https://c.statcounter.com/13030132/0/a62b96dc/1/"
 alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
+
+
+  <!-- n8n chat widget -->
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://moein8693.app.n8n.cloud/webhook/3a587925-1b69-46d2-90c5-930f63eda257/chat'
+    // Optional: uncomment to show a bilingual hint on first open
+    // initialMessages: [{ role: 'assistant', content: { text: 'Ask about Moein in English یا فارسی.' } }],
+  });
+</script>
+
 
 </body>
 
