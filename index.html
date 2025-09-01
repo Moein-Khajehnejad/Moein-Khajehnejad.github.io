@@ -558,7 +558,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <div id="n8n-chat"></div>
 
 <style>
-  /* Optional: position/size the embedded window */
+  /* Chat panel placement */
   #n8n-chat {
     position: fixed;
     bottom: 24px;
@@ -567,11 +567,67 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     max-width: 92vw;
     height: 70vh;
     z-index: 9999;
+    /* start hidden; slide up when opened */
+    transform: translateY(16px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 240ms ease, opacity 200ms ease;
+  }
+  #n8n-chat.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
   @media (max-width: 640px) {
     #n8n-chat { width: 95vw; height: 80vh; right: 12px; bottom: 12px; }
   }
+
+  /* Big, inviting launcher */
+  .chat-launcher {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 10000; /* above everything */
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #e63e62; /* you can tune this */
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .chat-launcher::before {
+    content: "💬";
+    font-size: 18px;
+    line-height: 1;
+  }
+  /* subtle attention pulse */
+  .chat-launcher::after {
+    content: "";
+    width: 10px; height: 10px;
+    border-radius: 9999px;
+    background: #fff;
+    opacity: .9;
+    margin-left: 2px;
+    animation: pulse 1.7s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%   { transform: scale(0.9); opacity: .6; }
+    70%  { transform: scale(1.5); opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  /* When chat is open, move the button a little so it doesn’t overlap edge */
+  #n8n-chat.open ~ #chat-launcher,
+  #chat-launcher[aria-expanded="true"] {
+    right: 28px;
+  }
 </style>
+
 
 
 <script type="module">
@@ -634,6 +690,49 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     // Streaming is optional; set true if your n8n agent supports it
     enableStreaming: false,
   });
+    // --- Launcher text + open/close behavior ---
+  const launcher = document.getElementById('chat-launcher');
+  const panel = document.getElementById('n8n-chat');
+  const isFA = (navigator.language || '').toLowerCase().startsWith('fa');
+
+  function setLauncherText(open) {
+    launcher.textContent = open
+      ? (isFA ? 'بستن گفتگو' : 'Close chat')
+      : (isFA ? 'گفت‌وگو با دستیار معین' : "Chat with Moein’s Assistant");
+  }
+
+  function openChat() {
+    panel.classList.add('open');
+    launcher.setAttribute('aria-expanded', 'true');
+    setLauncherText(true);
+  }
+  function closeChat() {
+    panel.classList.remove('open');
+    launcher.setAttribute('aria-expanded', 'false');
+    setLauncherText(false);
+  }
+
+  // initial label
+  setLauncherText(false);
+
+  // toggle on click
+  launcher.addEventListener('click', () => {
+    if (panel.classList.contains('open')) closeChat(); else openChat();
+  });
+
+  // ESC to close
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && panel.classList.contains('open')) closeChat();
+  });
+
+  // Gently auto-open once for first-time visitors (then remember)
+  if (!localStorage.getItem('moeinChatSeen')) {
+    setTimeout(() => {
+      openChat();
+      localStorage.setItem('moeinChatSeen', '1');
+    }, 2500);
+  }
+
 </script>
 
 
