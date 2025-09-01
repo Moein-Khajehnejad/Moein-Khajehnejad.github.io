@@ -639,6 +639,15 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   // Create the chat
   createChat({
     webhookUrl: 'https://moein8693.app.n8n.cloud/webhook/3a587925-1b69-46d2-90c5-930f63eda257/chat',
+    / 👇 add this block
+    webhookConfig: {
+  method: 'POST',
+  headers: {
+    // ⚠️ These creds are PUBLIC if you put them in the page source.
+    // Use non-sensitive values or switch to Option A.
+    'Authorization': 'Basic ' + btoa('moeinkh:Kheilikhari1'),
+  },
+},
     target: '#n8n-chat',
     mode: 'window',
     chatInputKey: 'chatInput',
