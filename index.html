@@ -557,6 +557,9 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- n8n chat mount point -->
 <div id="n8n-chat"></div>
 
+<!-- Chat launcher button -->
+<button id="chat-launcher" class="chat-launcher" aria-controls="n8n-chat" aria-expanded="false"></button>
+
 <style>
   /* Chat panel placement */
   #n8n-chat {
@@ -587,13 +590,13 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     position: fixed;
     bottom: 24px;
     right: 24px;
-    z-index: 10000; /* above everything */
+    z-index: 10000;
     border: none;
     border-radius: 9999px;
     padding: 12px 16px;
     font-weight: 700;
     cursor: pointer;
-    background: #e63e62; /* you can tune this */
+    background: #e63e62;
     color: #fff;
     box-shadow: 0 10px 24px rgba(0,0,0,.25);
     display: inline-flex;
@@ -605,7 +608,6 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     font-size: 18px;
     line-height: 1;
   }
-  /* subtle attention pulse */
   .chat-launcher::after {
     content: "";
     width: 10px; height: 10px;
@@ -621,79 +623,43 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     100% { opacity: 0; }
   }
 
-  /* When chat is open, move the button a little so it doesn’t overlap edge */
+  /* Nudge the button a bit when open */
   #n8n-chat.open ~ #chat-launcher,
   #chat-launcher[aria-expanded="true"] {
     right: 28px;
   }
 </style>
 
-
-
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-  // Auto-pick UI language for labels (content language is handled by your model prompt)
+  // Detect UI language once
   const isFA = (navigator.language || '').toLowerCase().startsWith('fa');
 
+  // Create the chat
   createChat({
-    // Your n8n Chat webhook
     webhookUrl: 'https://moein8693.app.n8n.cloud/webhook/3a587925-1b69-46d2-90c5-930f63eda257/chat',
-
-    // Embed into the div above as a windowed panel
     target: '#n8n-chat',
     mode: 'window',
-
-    // Persistence keys (keep conversations across reloads)
     chatInputKey: 'chatInput',
     chatSessionKey: 'sessionId',
     loadPreviousSession: true,
-
-    // Optional metadata sent with each message (useful in n8n)
     metadata: { page: 'home' },
-
-    // Don’t show the big welcome screen – use lightweight greetings instead
     showWelcomeScreen: false,
-
-    // UI language for labels/placeholders
     defaultLanguage: isFA ? 'fa' : 'en',
-
-    // Small, language-specific greeting bubbles
     initialMessages: isFA
-      ? [
-          'سلام! 👋',
-          'من «دستیار صفحهٔ دکتر معین خواجه نژاد» هستم. دربارهٔ زندگینامه، پژوهش‌ها، مقالات، جوایز یا راه‌های تماس بپرسید.'
-        ]
-      : [
-          'Hi! 👋',
-          'I’m Moein’s Homepage Assistant. Ask about his bio, research, papers, awards, talks, or how to contact him.'
-        ],
-
-    // UI strings (bilingual)
+      ? ['سلام! 👋', 'من «دستیار صفحهٔ دکتر معین خواجه نژاد» هستم. دربارهٔ زندگینامه، پژوهش‌ها، مقالات، جوایز یا راه‌های تماس بپرسید.']
+      : ['Hi! 👋', 'I’m Moein’s Homepage Assistant. Ask about his bio, research, papers, awards, talks, or how to contact him.'],
     i18n: {
-      en: {
-        title: "Moein’s Homepage Assistant",
-        subtitle: "Ask about Moein in English or Persian.",
-        footer: "",
-        getStarted: "New Conversation",
-        inputPlaceholder: "Type your question…",
-      },
-      fa: {
-        title: "دستیار صفحهٔ دکتر معین",
-        subtitle: "سؤال‌های خود را دربارهٔ معین به فارسی یا انگلیسی بپرسید.",
-        footer: "",
-        getStarted: "گفتگوی جدید",
-        inputPlaceholder: "سؤال خود را بنویسید…",
-      },
+      en: { title: "Moein’s Homepage Assistant", subtitle: "Ask about Moein in English or Persian.", footer: "", getStarted: "New Conversation", inputPlaceholder: "Type your question…" },
+      fa: { title: "دستیار صفحهٔ دکتر معین",   subtitle: "سؤال‌های خود را دربارهٔ معین به فارسی یا انگلیسی بپرسید.", footer: "", getStarted: "گفتگوی جدید", inputPlaceholder: "سؤال خود را بنویسید…" },
     },
-
-    // Streaming is optional; set true if your n8n agent supports it
     enableStreaming: false,
   });
-    // --- Launcher text + open/close behavior ---
+
+  // --- Launcher text + open/close behavior ---
   const launcher = document.getElementById('chat-launcher');
   const panel = document.getElementById('n8n-chat');
-  const isFA = (navigator.language || '').toLowerCase().startsWith('fa');
 
   function setLauncherText(open) {
     launcher.textContent = open
@@ -725,15 +691,15 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     if (e.key === 'Escape' && panel.classList.contains('open')) closeChat();
   });
 
-  // Gently auto-open once for first-time visitors (then remember)
+  // Auto-open once for first-time visitors
   if (!localStorage.getItem('moeinChatSeen')) {
     setTimeout(() => {
       openChat();
       localStorage.setItem('moeinChatSeen', '1');
     }, 2500);
   }
-
 </script>
+
 
 
 </body>
