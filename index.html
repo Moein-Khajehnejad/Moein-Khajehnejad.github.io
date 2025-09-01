@@ -38,8 +38,9 @@
 
   <link rel="stylesheet" href="./data/css">
   
-  <!-- n8n chat widget styles -->
+<!-- n8n chat widget styles -->
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
 
 
 </head>
@@ -548,14 +549,85 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
 
-  <!-- n8n chat widget -->
+<!-- n8n chat mount point -->
+<div id="n8n-chat"></div>
+
+<style>
+  /* Optional: position/size the embedded window */
+  #n8n-chat {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 380px;
+    max-width: 92vw;
+    height: 70vh;
+    z-index: 9999;
+  }
+  @media (max-width: 640px) {
+    #n8n-chat { width: 95vw; height: 80vh; right: 12px; bottom: 12px; }
+  }
+</style>
+
+
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
+  // Auto-pick UI language for labels (content language is handled by your model prompt)
+  const isFA = (navigator.language || '').toLowerCase().startsWith('fa');
+
   createChat({
-    webhookUrl: 'https://moein8693.app.n8n.cloud/webhook/3a587925-1b69-46d2-90c5-930f63eda257/chat'
-    // Optional: uncomment to show a bilingual hint on first open
-    // initialMessages: [{ role: 'assistant', content: { text: 'Ask about Moein in English یا فارسی.' } }],
+    // Your n8n Chat webhook
+    webhookUrl: 'https://moein8693.app.n8n.cloud/webhook/3a587925-1b69-46d2-90c5-930f63eda257/chat',
+
+    // Embed into the div above as a windowed panel
+    target: '#n8n-chat',
+    mode: 'window',
+
+    // Persistence keys (keep conversations across reloads)
+    chatInputKey: 'chatInput',
+    chatSessionKey: 'sessionId',
+    loadPreviousSession: true,
+
+    // Optional metadata sent with each message (useful in n8n)
+    metadata: { page: 'home' },
+
+    // Don’t show the big welcome screen – use lightweight greetings instead
+    showWelcomeScreen: false,
+
+    // UI language for labels/placeholders
+    defaultLanguage: isFA ? 'fa' : 'en',
+
+    // Small, language-specific greeting bubbles
+    initialMessages: isFA
+      ? [
+          'سلام! 👋',
+          'من «دستیار صفحهٔ دکتر معین» هستم. دربارهٔ زندگینامه، پژوهش‌ها، مقالات، جوایز یا راه‌های تماس بپرسید.'
+        ]
+      : [
+          'Hi! 👋',
+          'I’m Moein’s Homepage Assistant. Ask about his bio, research, papers, awards, talks, or how to contact him.'
+        ],
+
+    // UI strings (bilingual)
+    i18n: {
+      en: {
+        title: "Moein’s Homepage Assistant",
+        subtitle: "Ask about Moein in English or Persian.",
+        footer: "",
+        getStarted: "New Conversation",
+        inputPlaceholder: "Type your question…",
+      },
+      fa: {
+        title: "دستیار صفحهٔ دکتر معین",
+        subtitle: "سؤال‌های خود را دربارهٔ معین به فارسی یا انگلیسی بپرسید.",
+        footer: "",
+        getStarted: "گفتگوی جدید",
+        inputPlaceholder: "سؤال خود را بنویسید…",
+      },
+    },
+
+    // Streaming is optional; set true if your n8n agent supports it
+    enableStreaming: false,
   });
 </script>
 
